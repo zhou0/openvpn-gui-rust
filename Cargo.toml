@@ -4,6 +4,19 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+windows = { version = "0.58", features = [
+    "Win32_Foundation",
+    "Win32_Networking_WinSock",
+    "Win32_System_SystemServices",
+    "Win32_System_LibraryLoader",
+    "Win32_System_Threading",
+    "Win32_UI_WindowsAndMessaging",
+    "Win32_Storage_FileSystem",
+    "Win32_Security",
+] }
+libc = "0.2"
+widestring = "1.1"
+anyhow = "1.0"
 thiserror = "2.0.11"
 base64 = "0.22.1"
 iced = { version = "0.14.0", features = ["tokio"] }

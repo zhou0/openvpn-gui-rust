@@ -40,3 +40,10 @@ plap/credentialprovider.h
 stamp-h1
 target/
 x64
+Debug
+out
+build
+
+# Added by cargo
+
+/target
